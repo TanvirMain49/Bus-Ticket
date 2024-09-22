@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P-Ticket</title>
+    <link rel="icon" href="images/bus-icon.png" type="image/x-icon">
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons  -->
+    <script
+      src="https://kit.fontawesome.com/99a4753299.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .raleway {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+  <body class="raleway">
+    <header class="sm:mx-36 mx-2 mt-5">
+      <!-- navbar section start -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Item 1</a></li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-3xl font-[800]">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="hover:text-[#1DD100] hover:bg-white text-black ">Home</a></li>
+            <li><a class="hover:text-[#1DD100] hover:bg-white text-black ">About</a></li>
+            <li><a class="hover:text-[#1DD100] hover:bg-white text-black border-none">Destination</a></li>
+            <li><a class="hover:text-[#1DD100] hover:bg-white text-black border-none">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-lg bg-[#1cd10037] hover:bg-[#1cd10036]">
+            <a class="text-[#1DD100]">Bus</a>
+            <img src="images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <!-- navbar section end -->
+    </header>
+
+    <!-- banner section start -->
+    <section class="sm:mx-36 mx-2 mt-7 relative">
+      <!-- img and text section start -->
+      <div
+        class="hero rounded-3xl"
+        style="
+          background-image: url(./images/banner.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 35.375rem;
+        "
+      >
+        <!-- banner text section start -->
+        <div class="hero-content text-neutral-content text-center">
+          <div class="px-52">
+            <h1 class="mb-5 text-6xl font-bold">
+              End-to-End Travel with <br /><span class="text-[#1DD100]"
+                >P Paribahan</span
+              >
+            </h1>
+            <p class="mb-5 px-36">
+              Yes, you can run unit tests and view the results directly within
+              the app. The integrated testing features allow for a streamlined .
+            </p>
+            <button
+              class="btn bg-[#1DD100] hover:bg-[#1DD100] border-none font-bold"
+            >
+              Buy Ticket
+            </button>
+          </div>
+        </div>
+        <!-- banner text section end -->
+      </div>
+      <!-- img and text section end -->
+
+      <!-- card section start -->
+
+      <div class="grid grid-cols-3 gap-8 absolute -bottom-16 left-52">
+        <!-- 1st card -->
+        <div
+          class="flex gap-4 border-b-4 border-b-[#1DD100] py-6 px-4 rounded-lg bg-white"
+        >
+          <img src="images/people.png" alt="" />
+          <div class="flex flex-col justify-center text-start">
+            <h1 class="font-extrabold text-4xl">500K+</h1>
+            <p class="text-sm">Registered users</p>
+          </div>
+        </div>
+        <!-- 2nd card -->
+        <div class="flex gap-4 border-b-4 border-b-[#1DD100] py-6 px-4
+        rounded-lg bg-white"">
+        <img src="images/ticket-cupon.png" alt="" />
+        <div class="flex flex-col justify-center text-start">
+          <h1 class="font-extrabold text-4xl">1.7 lacks</h1>
+          <p class="text-sm">Registered users</p>
+        </div>
+      </div>
+
+      <!-- 3rd card -->
+      <div class="flex gap-4 border-b-4 border-b-[#1DD100] py-6 px-4 rounded-lg
+      bg-white"">
+      <img src="images/stoppage.png" alt="" />
+      <div class="flex flex-col justify-center text-start">
+        <h1 class="font-extrabold text-4xl">80K+</h1>
+        <p class="text-sm">Registered users</p>
+      </div>
+      </div>
+    </div>
+
+      <!-- card section end -->
+    </section>
+    <!-- banner section end -->
+
+    <!-- Best offers section start -->
+    <section class="sm:mx-36 mx-2 mt-36 relative">
+      <!-- text section start-->
+      <div>
+        <h1 class="text-4xl font-bold text-center">Best offers</h1>
+      </div>
+      <!-- text section end-->
+
+      <!-- card section start-->
+      <div class="flex justify-center gap-9 mt-16 mb-16">
+        <!-- first card -->
+        <div class="flex relative">
+          <div
+            class="card bg-primary text-primary-content w-72 bg-[#FFBF0F] text-center"
+          >
+            <div class="card-body inter">
+              <h1 class="text-4xl font-extrabold text-black">15% OFF</h1>
+              <p class="text-black font-semibold text-sm">
+                on your next purchase
+              </p>
+              <p class="text-gray-700 text-sm">use by January 2024</p>
+            </div>
+            <div>
+              <span
+                class="bg-white inline-block w-10 h-10 rounded-full absolute -top-3 -right-5 z-10"
+              ></span>
+              <span
+                class="inline-block border-2 border-dashed border-white h-28 absolute top-7 -right-1 z-20"
+              ></span>
+              <span
+                class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-4 -right-5 z-10"
+              ></span>
+            </div>
+          </div>
+          <!-- first ticket 2nd part -->
+          <div
+            class="card bg-primary text-primary-content w-52 bg-[#FFBF0F] text-center"
+          >
+            <div class="card-body mt-4 inter">
+              <h1 class="text-2xl font-bold text-black">NEW 15</h1>
+              <p class="text-gray-700 text-sm">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class="flex relative">
+          <div
+            class="card bg-primary text-primary-content w-72 bg-[#F78C9C] text-center"
+          >
+            <div class="card-body inter">
+              <h1 class="text-4xl font-extrabold text-black">20% OFF</h1>
+              <p class="text-black font-semibold text-sm">
+                on your next purchase
+              </p>
+              <p class="text-gray-700 text-sm">use by January 2024</p>
+            </div>
+            <div>
+              <span
+                class="bg-white inline-block w-10 h-10 rounded-full absolute -top-3 -right-5 z-10"
+              ></span>
+              <span
+                class="inline-block border-2 border-dashed border-white h-28 absolute top-7 -right-1 z-20"
+              ></span>
+              <span
+                class="bg-white inline-block w-10 h-10 rounded-full absolute -bottom-4 -right-5 z-10"
+              ></span>
+            </div>
+          </div>
+          <!-- second ticket 2nd part -->
+          <div
+            class="card bg-primary text-primary-content w-52 bg-[#F78C9C] text-center"
+          >
+            <div class="card-body mt-4 inter">
+              <h1 class="text-2xl font-bold text-black">Couple 20</h1>
+              <p class="text-gray-700 text-sm">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card section end-->
+
+      <!-- button section start-->
+      <div class="flex justify-center">
+        <button
+          class="btn border-2 border-[#1DD100] text-[#1DD100] font-bold px-8 py-5"
+        >
+          See All Offers
+        </button>
+      </div>
+      <!-- button section end-->
+    </section>
+    <!-- Best offers section end -->
+
+    <!-- !P.H Paribahan  and ticket booking section start -->
+    <section
+      class="bg-gray-100 border-t-2 border-[#1DD100] rounded-t-3xl mt-16 pb-24"
+    >
+    <!-- Ticket section start-->
+    <div>
+          <!-- text container -->
+        <div class="sm:mx-36 mx-2 text-center mt-28 space-y-4">
+          <h1 class="text-5xl font-bold">P.H Paribahan</h1>
+          <p class="text-sm inter text-gray-400 px-72">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+
+        <!-- Ticket Shown section -->
+        <div
+          class="flex items-center gap-x-1 sm:mx-36 mx-2 mb-5 mt-16 rounded-3xl bg-gray-200"
+        >
+          <!-- first part -->
+          <div class="space-y-9 px-12 ">
+            <!-- sit part** -->
+            <div class="flex justify-between pl-7">
+              <!-- logo and title part -->
+              <div class="flex space-x-6">
+                <img src="images/bus-logo.png" alt="" />
+                <div>
+                  <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <!-- button-ticket section*** -->
+              <button class="btn bg-[#1cd10037] hover:bg-[#1cd10036]">
+                <img src="images/seat-green-filled.png" alt="" />
+                <a class="text-[#1DD100] inter"><span id="available-seat">40</span> Seats Left</a>
+              </button>
+            </div>
+            <!-- ticket information section -->
+            <div class="space-y-7 bg-gray-100 rounded-xl p-7">
+              <!-- row-1 -->
+              <div class="border-b-2 border-dashed">
+                <div class="flex justify-between mb-2">
+                  <p>Route</p>
+                  <p class="">Dhaka - Sylhet</p>
+                </div>
+              </div>
+
+              <!-- row-2 -->
+              <div class="border-b-2 border-dashed m">
+                <div class="flex justify-between mb-2">
+                  <p>Departure Time</p>
+                  <p>9:00 PM</p>
+                </div>
+              </div>
+
+              <!-- 3 btn -->
+              <div class="flex justify-between space-x-4">
+                <button class="btn px-11 py-4 bg-gray-300">
+                  Boarding Point - Laxmipur
+                </button>
+                <button class="btn px-11 py-4 bg-gray-300">
+                  Dropping Point - Bogura
+                </button>
+                <button class="btn px-11 py-4 bg-gray-300">
+                  Est. Time - 11 Hour
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- mid part -->
+          <div>
+            <img src="images/info-devider.png" alt="" />
+          </div>
+
+          <!-- section part -->
+          <div class="flex flex-col justify-center items-center px-6 space-y-7">
+            <img src="images/fare.png" alt="" />
+            <div class="text-center">
+              <h2 class="inter text-3xl font-extrabold">550 Taka</h2>
+              <p>Per Seat</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <!-- Ticket section end-->  
+
+      <!-- sit selection section start -->
+      <section
+        class="sm:mx-36 mx-2 mt-16 pr-8 pl-4 py-6 bg-white rounded-2xl shadow-sm grid grid-cols-3 gap-5"
+      >
+        <!-- select sit section -->
+        <div class="col-span-2">
+          <!-- text section or title -->
+          <div class="py-3 px-6">
+            <h2 class="text-2xl font-extrabold">Select Your Sit</h2>
+          </div>
+
+          <!-- selected and available sit section -->
+          <div
+            class="flex justify-between gap-2 border-t-2 border-b-2 border-dashed ml-6 my-4"
+          >
+            <div class="flex justify-center items-center gap-2 py-2">
+              <img src="images/seat-gray.png" alt="" />
+              <p class="font-extrabold">Available</p>
+            </div>
+
+            <div class="flex justify-center items-center gap-2">
+              <img src="images/seat-green-filled.png" alt="" />
+              <p class="font-extrabold">Selected</p>
+            </div>
+          </div>
+
+          <!-- sit booking section start -->
+          <section class="grid grid-cols-12 items-center gap-y-5 ml-6 inter px-4">
+            <!-- diver sit -->
+            <p class="col-span-1"></p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <p class="col-span-8"></p>
+              <button class="btn col-span-2 hover:bg-none transition-colors duration-200 ease-in-out w-20">
+                <img src="https://media.istockphoto.com/id/1153445663/vector/steering-wheel-icon-car-and-drive-or-driver-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=H58CVFRXlUSp6fT9pjpg-NG4hN-OhJY1xp9rSSrLNBs=" alt="" />
+              </button>
+            </div>
+
+            <!-- row-1 -->
+            <p class="col-span-1">A</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                A4
+              </button>
+            </div>
+            <!-- row-2 -->
+            <p class="col-span-1">B</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)" 
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                B4
+              </button>
+            </div>
+            <!-- row-3 -->
+            <p class="col-span-1">C</p>
+            <div 
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                C4
+              </button>
+            </div>
+            <!-- row-4 -->
+            <p class="col-span-1">D</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                D4
+              </button>
+            </div>
+            <!-- row-5 -->
+            <p class="col-span-1">E</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                E4
+              </button>
+            </div>
+            <!-- row-6 -->
+            <p class="col-span-1">F</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                F4
+              </button>
+            </div>
+            <!-- row-7 -->
+            <p class="col-span-1">G</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                G4
+              </button>
+            </div>
+            <!-- row-8 -->
+            <p class="col-span-1">H</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                H4
+              </button>
+            </div>
+            <!-- row-9 -->
+            <p class="col-span-1">I</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                I4
+              </button>
+            </div>
+            <!-- row-10 -->
+            <p class="col-span-1">J</p>
+            <div
+              class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+            >
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J1
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J2
+              </button>
+              <p class="col-span-2"></p>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J3
+              </button>
+              <button onclick="handleSelectedSit(this)"
+                class="btn col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out"
+              >
+                J4
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <!-- booked ticket section start -->
+        <div class="border-l-2 pl-5 border-dashed">
+          <!-- text section -->
+          <div class="py-3 px-6">
+            <h2 class="text-2xl font-extrabold">Select Your Sit</h2>
+          </div>
+          <div class="border-b-2 my-4 border-dashed"></div>
+
+          <section class="inter">
+            <!-- booked ticket section -->
+            <div class="bg-[#f7f8f8] p-8 rounded-xl">
+              <!-- title -->
+              <h1 class="flex justify-between">
+                <p class="flex">
+                  <span>Seat</span>
+                  <span id="seat-cnt"
+                    class="bg-[#1DD100] w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm"
+                    >0</span
+                  >
+                </p>
+                <p>Class</p>
+                <p>Price</p>
+              </h1>
+              <!-- sit booked history -->
+              <div class="border-b-2 my-4 border-dashed"></div>
+              <ul id="selected-seat" class="space-y-5">
+                <h3 id="default-text"
+                  class="text-center text-error capitalize text-2xl font-semibold"
+                >
+                  No seat booked
+                </h3>
+
+              </ul>
+              <div class="border-b-2 my-4 border-dashed"></div>
+              <!-- show price -->
+              <div class="text-lg font-semibold flex justify-between">
+                <p>Total Price</p>
+                <p>
+                  <span>BDT:</span>
+                  <span id="total-price">****</span>
+                </p>
+              </div>
+              <!-- copupon section -->
+              <div
+                id="show-copupon-price"
+                class="flex items-center gap-2 py-2 my-2 border-y-2 border-dashed text-lg font-semibold justify-between"
+              >
+
+                <input
+                  id="copupon-field"
+                  type="text"
+                  disabled
+                  placeholder="Enter your copupon"
+                  class="input my-5 w-full input-primary border-primary border-[#1DD100]"
+                />
+                <button id="copupon-btn" class="btn bg-[#1DD100]" disabled>Apply</button>
+              </div>
+              <!-- gard price -->
+              <div class="text-lg font-semibold flex justify-between">
+                <p>Grand Total</p>
+                <p>
+                  <span>BDT:</span>
+                  <span id="copupon-price">****</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- form section start -->
+            <div class="my-5">
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-extrabold">Passenger Name*</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="input input-bordered w-full"
+                />
+                <div class="label"></div>
+              </label>
+
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-extrabold">Phone Number*</span>
+                </div>
+                <input
+                  id="number-field"
+                  type="number"
+                  placeholder="Enter your phone number"
+                  class="input input-bordered w-full"
+                />
+                <div class="label"></div>
+              </label>
+
+              <label class="form-control w-full my-3">
+                <div class="label">
+                  <span class="label-text font-extrabold">Email ID</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your email id"
+                  class="input input-bordered w-full"
+                />
+                <div class="label"></div>
+              </label>
+              <button
+                id="next-btn"
+                disabled
+                class ="btn btn-primary border-[#1DD100] bg-[#1DD100] text-white rounded-lg w-full mt-5 text-lg font-bold uppercase hover:bg-[#1DD100]"
+              >
+                Next
+              </button>
+
+              <dialog id="my-modal-1" class="modal">
+                <form
+                  method="dialog"
+                  class="modal-box px-5 py-10 flex flex-col justify-center items-center"
+                >
+                  <img src="images/success.png" alt="">
+                  <h3 class="font-bold text-2xl text-[#1DD100] my-5">
+                    Congratulation
+                  </h3>
+                  <div class="text-center">
+                    <p class="font-bold">
+                      Thank you for Booking Our Bus Seats. We are working hard
+                      to find the best service and deals for you.
+                    </p>
+                  </div>
+                  <p class="my-2">
+                    Shortly you will find a confirmation in your email.
+                  </p>
+                  <button
+                    id="btn-continue"
+                    class="btn bg-[#1DD100] px-16 btn-md hover:bg-black transition-colors ease-in duration-300 text-white"
+                  >Continue</button>
+                </form>
+              </dialog>
+
+              <div class="flex justify-between my-4">
+                <a
+                  class="underline font-semibold hover:text-[#1DD100] transition-colors ease-in duration-200"
+                  href="#"
+                  >Terms and Conditions</a
+                >
+                <a
+                  class="underline font-semibold hover:text-[#1DD100] transition-colors ease-in duration-200"
+                  href="#"
+                  >Cancellation Policy</a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- sit selection section end -->
+    </section>
+    <!-- !P.H Paribahan and ticket booking section end -->
+
+    <!-- footer section start -->
+    <footer class="bg-black text-white">
+        <div class="mx-40 pt-20 flex justify-between">
+            <div class="space-y-5">
+                <h1 class="font-extrabold text-4xl">P-Ticket</h1>
+                <p class="text-gray-400">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+        <div class="space-y-5">
+            <p>Download our app</p>
+            <div class="flex justify-center items-center space-x-2 border-2 p-2 rounded-md">
+                <img src="images/playstore.png" alt="">
+                <div>
+                    <p>Get it on</p>
+                    <p>Google Play</p>
+                </div>
+            </div>
+        </div>    
+
+
+        </div>
+        <div class="mx-40 py-5 text-gray-100 border-b-2 border-dashed border-gray-400"></div>
+        <div class="mx-40 flex justify-between py-16 inter ">
+            <div class="text-sm">
+                <p class="text-gray-400">@all rights reserved, P-Ticket services limited.2024</p>
+            </div>
+            <div class="flex space-x-3 text-sm">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer section end -->
+
+    <!-- !Js  -->
+     <script src="script.js"></script>
+  </body>
+</html>
